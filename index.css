@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
 
-
 *, :root {
     margin: 0;
     padding: 0;
@@ -14,8 +13,8 @@
     -webkit-text-size-adjust: 100%;
 }
 
-body{
-    background-color: #0f172a;
+body {
+    background-color: #e98cc3;
 }
 
 main {
@@ -24,37 +23,36 @@ main {
     margin: 0 auto 64px;
 }
 
-header{
+header {
     margin-top: 64px;
     padding-bottom: 24px;
-    border-bottom: 1px solid #334155;
+    border-bottom: 1px solid #abc9f4;
 }
 
-header h1{
+header h1 {
     margin-top: 24px;
     font-size: 30px;
-    color: #f1f5f9;
+    color: #161717;
 }
 
-.quiz-item{
+.quiz-item {
     margin-top: 24px;
-    border: 1px solid #475569;
+    border: 1px solid #18191b;
     border-radius: 6px;
     overflow: hidden;
 }
 
-.quiz-item h3{
+.quiz-item h3 {
     padding: 16px 20px;
-    color: #e2e8f0;
+    color: #e7ecf2;
     display: flex;
     align-items: center;
     gap: 12px;
     background-color:  #1e293b;
 }
 
-.quiz-item h3:before{
-    counter-increment: quiz-item;
-    content: counter(quiz-item);
+.quiz-item h3:before {
+    content: "";
     background-color: #475569;
     width: 28px;
     height: 28px;
@@ -66,13 +64,24 @@ header h1{
     flex-shrink: 0;
 }
 
-.quiz-item dl{
+.quiz-item-1 { counter-reset: quiz-item 0; }
+.quiz-item-2 { counter-reset: quiz-item 1; }
+.quiz-item-3 { counter-reset: quiz-item 2; }
+.quiz-item-4 { counter-reset: quiz-item 3; }
+.quiz-item-5 { counter-reset: quiz-item 4; }
+.quiz-item-6 { counter-reset: quiz-item 5; }
+.quiz-item-7 { counter-reset: quiz-item 6; }
+.quiz-item-8 { counter-reset: quiz-item 7; }
+.quiz-item-9 { counter-reset: quiz-item 8; }
+.quiz-item-10 { counter-reset: quiz-item 9; }
+
+.quiz-item dl {
     padding: 20px 24px;
     display: grid;
     gap: 8px;
 }
 
-.quiz-item dl dt{
+.quiz-item dl dt {
     font-size: 14px;
     font-weight: 400;
     line-height: 24px;
@@ -80,12 +89,12 @@ header h1{
     display: flex;
     align-items: center;
     gap: 8px;
-    color: #e2e3f0;
+    color: #18181a;
 }
 
-input{
+input {
     all: unset;
-    border: 1px solid #94a3b8;
+    border: 1px solid #18191b;
     width: 16px;
     height: 16px;
     border-radius: 50%;
@@ -95,27 +104,68 @@ input{
     flex-shrink: 0;
 }
 
-input:checked{
-    border: 1px solid #a3e635;
+input:checked {
+    border: 1px solid #44e635;
 }
 
-input:checked::before{
+input:checked::before {
     content: "";
     width: 10px;
     height: 10px;
     display: block;
-    background-color: #a3e635;
+    background-color: #44e635;
     border-radius: 50%;
 }
 
-#acertos{
+#acertos {
     text-align: center;
-    background-color: #a3e635;
-
+    background-color: #44e635;
     position: fixed;
     bottom: 0;
     left: 0;
-
     width: 100%;
     padding: 12px;
+}
+
+/* Restante do seu código... */
+
+/* Adicione esta parte ao final do seu CSS */
+.quiz-item:nth-child(1) h3:before {
+    content: "1";
+}
+
+.quiz-item:nth-child(2) h3:before {
+    content: "2";
+}
+
+.quiz-item:nth-child(3) h3:before {
+    content: "3";
+}
+
+.quiz-item:nth-child(4) h3:before {
+    content: "4";
+}
+
+.quiz-item:nth-child(5) h3:before {
+    content: "5";
+}
+
+.quiz-item:nth-child(6) h3:before {
+    content: "6";
+}
+
+.quiz-item:nth-child(7) h3:before {
+    content: "7";
+}
+
+.quiz-item:nth-child(8) h3:before {
+    content: "8";
+}
+
+.quiz-item:nth-child(9) h3:before {
+    content: "9";
+}
+
+.quiz-item:nth-child(10) h3:before {
+    content: "10";
 }
